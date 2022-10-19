@@ -40,10 +40,11 @@ function TextInputInput(props: TextInputIputProps) {
     return (
         <input
             className={clsx(
-                'bg-transparent flex-1 text-gray-200 text-xs outline-none placeholder:text-gray-600', {
+                'bg-transparent flex-1 text-gray-200 text-xs outline-none placeholder:text-gray-600 placeholder:font-semibold', {
                     'appearance-none': props.type === 'number'
                 }
             )}
+            autoComplete="off"
             {...props}
         />
     )

@@ -19,7 +19,9 @@ export function Button(props: ButtonProps) {
                 'bg-green-600 hover:bg-green-800 focus:ring-green-600': props.context === 'confirm',
             })
         } {...props}>
-            {props.children}
+            <div className='flex items-center justify-center gap-2'>
+                {props.children}
+            </div>
         </Comp>
     )
 }
