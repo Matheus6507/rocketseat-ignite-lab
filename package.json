@@ -13,7 +13,10 @@
   },
   "dependencies": {
     "@radix-ui/react-checkbox": "^1.0.0",
+    "@radix-ui/react-icons": "^1.1.1",
     "@radix-ui/react-label": "^1.0.0",
+    "@radix-ui/react-navigation-menu": "^1.0.0",
+    "@radix-ui/react-select": "^1.1.1",
     "@radix-ui/react-slot": "^1.0.0",
     "autoprefixer": "^10.4.12",
     "clsx": "^1.2.1",

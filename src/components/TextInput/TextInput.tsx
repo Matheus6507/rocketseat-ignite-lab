@@ -9,7 +9,7 @@ export interface TextInputRootProps {
 
 function TextInputRoot(props: TextInputRootProps) {
     return (
-        <div className='my-4'>
+        <div>
             {props.label}
             <div className='flex items-center gap-3 h-12 py-4 px-3 rounded bg-transparent border-2 border-gray-600 w-full transition-all focus-within:ring-2 ring-gray-600'>
                 {props.children}
@@ -51,21 +51,8 @@ function TextInputInput(props: TextInputIputProps) {
 
 TextInputInput.displayName = 'TextInput.Input'
 
-export interface TextInputLabelProps {
-    displayText: string
-}
-
-function TextInputLabel(props: TextInputLabelProps) {
-    return (
-        <p className='text-sm gap-2 text-gray-200'>{props.displayText}</p>
-    )
-}
-
-TextInputLabel.displayName = 'TextInput.Label'
-
 export const TextInput = {
     Root: TextInputRoot,
     Input: TextInputInput,
     Icon: TextInputIcon,
-    Label: TextInputLabel
 }
