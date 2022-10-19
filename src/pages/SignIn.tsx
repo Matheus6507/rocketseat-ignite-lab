@@ -48,8 +48,8 @@ export function SignIn() {
 
                 <div className="mt-4">
                     <Button type="submit">
-                        <SignInIcon className="w-6 h-6" />
                         Entrar
+                        <SignInIcon className="w-6 h-6" />
                     </Button>
                 </div>
             </form>

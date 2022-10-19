@@ -1,4 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
+import { SignIn } from 'phosphor-react';
 import { Button, ButtonProps } from "./Button";
 
 export default {
@@ -11,6 +12,22 @@ export default {
 } as Meta<ButtonProps>
 
 export const Default: StoryObj<ButtonProps> = {
+    argTypes: {
+        asChild: {
+            table: {
+                disable: true
+            }
+        }
+    }
+}
+
+export const WithIcon: StoryObj<ButtonProps> = {
+    args: {
+        children: [
+            'Fazer login',
+            <SignIn className="w-6 h-6" />
+        ]
+    },
     argTypes: {
         asChild: {
             table: {
